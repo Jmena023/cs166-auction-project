@@ -7,11 +7,11 @@ from payment import make_payment, view_payment, view_user_payments, update_payme
 
 def main():
     connection = psycopg2.connect(
-        database="jmena023_DB",
-        user="jmena023",
-        host="localhost",
-        port="31508"
-    )
+    database="cpham133_DB",
+    user="cpham133",
+    host="localhost",
+    port="40493"
+)
 
     while True:
         print()
