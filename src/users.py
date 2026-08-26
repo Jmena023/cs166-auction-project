@@ -9,12 +9,19 @@ def create_user(connection):
     phone_num = input("Enter phone number: ")
     address = input("Enter address: ")
     favorite_category = input("Enter favorite category: ")
+    while True:
+        role = input("Enter role (Buyer, Seller, or Admin): ").strip().capitalize()
+
+        if role in ("Buyer", "Seller", "Admin"):
+            break
+        else:
+            print("Invalid role. Please enter Buyer, Seller, or Admin.")
 
     cursor.execute(
         """
         INSERT INTO users
-        (login, password, phone_num, address, favorite_category)
-        VALUES (%s, %s, %s, %s, %s);
+        (login, password, phone_num, address, favorite_category, role)
+        VALUES (%s, %s, %s, %s, %s, %s);
         """,
         (login, password, phone_num, address, favorite_category)
     )
