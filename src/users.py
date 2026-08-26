@@ -44,10 +44,14 @@ def login_user(connection):
         print("Login successful")
         print("Login =", row[0])
         print("Role =", row[1])
+        
+        cursor.close()
+        return row[0], row[1]
     else:
         print("Invalid login or password")
 
     cursor.close()
+    return None, None
 
 
 def view_profile(connection):
@@ -98,4 +102,47 @@ def update_profile(connection):
     )
 
     connection.commit()
+    cursor.close()
+
+def update_user_role(connection):
+    cursor = connection.cursor()
+
+    admin_login = input("Enter admin login: ")
+    user_login = input("Enter user login: ")
+    new_role = input("Enter new role (Buyer, Seller, Admin): ")
+
+    cursor.execute(
+        """
+        SELECT role
+        FROM users
+        WHERE login = %s;
+        """,
+        (admin_login,)
+    )
+
+    row = cursor.fetchone()
+
+    if not row:
+        print("Admin not found")
+        cursor.close()
+        return
+
+    if row[0] != "Admin":
+        print("Only an Admin can change roles")
+        cursor.close()
+        return
+
+    cursor.execute(
+        """
+        UPDATE users
+        SET role = %s
+        WHERE login = %s;
+        """,
+        (new_role, user_login)
+    )
+
+    connection.commit()
+
+    print("User role updated")
+
     cursor.close()
