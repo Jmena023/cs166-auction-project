@@ -1,8 +1,5 @@
-#! /bin/bash
-echo "creating db named ... auction_db"
-createdb -h localhost -p $PGPORT auction_db
-pg_ctl status
-
-echo "Initializing tables ..."
-sleep 1
-psql -h localhost -p $PGPORT auction_db < phase3.sql
+  #! /bin/bash
+  echo "creating db named ... "$USER"_DB"
+  cs166_createdb $USER'_DB'
+  cs166_db_status
+  cs166_psql $USER'_DB' < phase3.sql
