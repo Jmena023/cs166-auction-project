@@ -23,7 +23,7 @@ def create_user(connection):
         (login, password, phone_num, address, favorite_category, role)
         VALUES (%s, %s, %s, %s, %s, %s);
         """,
-        (login, password, phone_num, address, favorite_category)
+        (login, password, phone_num, address, favorite_category, role)
     )
 
     connection.commit()
