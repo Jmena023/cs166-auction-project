@@ -24,7 +24,8 @@ def buyer_menu(connection, login):
         print("9. Make Payment")
         print("10. View Payment")
         print("11. View User Payments")
-        print("12. Logout")
+        print("12. Update Payment Status")
+        print("13. Logout")
 
         choice = input("Enter choice: ")
 
@@ -62,6 +63,9 @@ def buyer_menu(connection, login):
             view_user_payments(connection)
 
         elif choice == "12":
+            update_payment_status(connection)
+
+        elif choice == "13":
             print("Logged out")
             break
 
@@ -84,7 +88,10 @@ def seller_menu(connection, login):
         print("9. Search Auctions")
         print("10. End Auction")
         print("11. View Auction Bids")
-        print("12. Logout")
+        print("12. Create Shipment")
+        print("13. View Shipment")
+        print("14. Update Shipment Status")
+        print("15. Logout")
 
         choice = input("Enter choice: ")
 
@@ -122,6 +129,15 @@ def seller_menu(connection, login):
             view_auction_bids(connection)
 
         elif choice == "12":
+            create_shipment(connection)
+
+        elif choice == "13":
+            view_shipment(connection)
+
+        elif choice == "14":
+            update_shipment_status(connection)
+
+        elif choice == "15":
             print("Logged out")
             break
 
@@ -140,11 +156,7 @@ def admin_menu(connection, login):
         print("5. Browse Items")
         print("6. Browse Auctions")
         print("7. View Payment")
-        print("8. Update Payment Status")
-        print("9. Create Shipment")
-        print("10. View Shipment")
-        print("11. Update Shipment Status")
-        print("12. Logout")
+        print("8. Logout")
 
         choice = input("Enter choice: ")
 
@@ -170,18 +182,6 @@ def admin_menu(connection, login):
             view_payment(connection)
 
         elif choice == "8":
-            update_payment_status(connection)
-
-        elif choice == "9":
-            create_shipment(connection)
-
-        elif choice == "10":
-            view_shipment(connection)
-
-        elif choice == "11":
-            update_shipment_status(connection)
-
-        elif choice == "12":
             print("Logged out")
             break
 

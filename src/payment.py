@@ -114,8 +114,33 @@ def view_user_payments(connection):
 def update_payment_status(connection):
     cursor = connection.cursor()
 
+    buyer_login = input("Enter your login: ")
     payment_id = input("Enter payment ID: ")
-    payment_status = input("Enter payment status: ")
+    auction_id = input("Enter auction ID: ")
+
+    cursor.execute(
+        """
+        SELECT buyer_login
+        FROM payment
+        WHERE payment_id = %s
+          AND auction_id = %s;
+        """,
+        (payment_id, auction_id)
+    )
+
+    payment = cursor.fetchone()
+
+    if not payment:
+        print("Payment not found for that payment ID and auction ID")
+        cursor.close()
+        return
+
+    if payment[0] != buyer_login:
+        print("Only the buyer who made this payment can update its status")
+        cursor.close()
+        return
+
+    payment_status = input("Enter new payment status (Pending/Completed/Failed): ")
 
     cursor.execute(
         """
