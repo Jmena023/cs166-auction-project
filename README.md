@@ -62,7 +62,7 @@ On program run, the screen above displays and we are given 3 options. Create Use
 <br>
 <br>
 
-Create User
+### Create User
 <br>
 <img width="274" height="154" alt="image" src="https://github.com/user-attachments/assets/248ee195-56d2-4cea-9ef1-8bb5e6e7af21" />
 <br>
@@ -70,7 +70,7 @@ Upon selecting "1", Create user we are prompted to enter account details for acc
 <br>
 <br>
 
-Logging In
+### Logging In
 <br>
 <img width="174" height="144" alt="image" src="https://github.com/user-attachments/assets/7e7f99f0-8cdf-4771-9b1a-ebe250cbdbfe" />
 <br>
@@ -78,12 +78,30 @@ When choosing to log in, the system will prompt you to enter your username and p
 <br>
 <br>
 
-Buyer, Seller and Admin Menu
+### Buyer, Seller and Admin Menu
 <br>
 <img width="206" height="209" alt="image" src="https://github.com/user-attachments/assets/501d3a81-ff80-4011-babe-9ffbfb521283" />
 <br>
 Once you log in you are face a new menu, specific to your role. The image above shows the Buyer menu.
 <br>
 <br>
+
+### View Profile
+<br>
+<img width="197" height="288" alt="image" src="https://github.com/user-attachments/assets/7ea62a54-498c-4965-86c7-f4c852dd6af4" />
+<br>
+Allows you to view account details. This is available to all roles
+<br>
+<br>
+
+### Update Profile
+<br>
+<img width="241" height="263" alt="image" src="https://github.com/user-attachments/assets/c145dc8b-402e-495d-8b74-2903787c10e2" />
+<br>
+Allows you to change your account details, except for your role and password.
+<br>
+<br>
+
+
 
 ## Performance Testing
