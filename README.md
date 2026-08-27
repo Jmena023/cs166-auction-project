@@ -2,8 +2,7 @@
 Joshua Mena and Colin Pham
 
 ## Languages Used:
-PostgreSQL 
-Python
+PostgreSQL and Python
 
 ## Installation Guide:
 ### Clone the repo
@@ -26,3 +25,7 @@ python3 main.py
 
 ### Close DB 
 source stopPostgreDB.sh 
+
+## Project Assumptions:
+
+## Usage + Example Output:
