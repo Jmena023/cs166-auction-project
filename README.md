@@ -54,5 +54,19 @@ source stopPostgreDB.sh
 + Shipments can be completed by the Seller once the Payment is complete.
 
 ## Usage + Example Output:
+Menu
+<img width="377" height="104" alt="image" src="https://github.com/user-attachments/assets/73976ebf-7429-4020-a771-760c80488f48" />
+On program run, the screen above displays and we are given 3 options. Create User, Login, and Exit.
+
+
+Create User
+<img width="274" height="154" alt="image" src="https://github.com/user-attachments/assets/248ee195-56d2-4cea-9ef1-8bb5e6e7af21" />
+Upon selecting "1", Create user we are prompted to enter account details for account creation. 
+
+Logging In
+<img width="174" height="144" alt="image" src="https://github.com/user-attachments/assets/7e7f99f0-8cdf-4771-9b1a-ebe250cbdbfe" />
+When choosing to log in, the system will prompt you to enter your username and password. If successful, it will verify and display your username and role. 
+
+
 
 ## Performance Testing
