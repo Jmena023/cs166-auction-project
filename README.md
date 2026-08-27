@@ -55,6 +55,7 @@ source stopPostgreDB.sh
 
 ## Usage + Example Output:
 Menu
+(<br>)
 <img width="377" height="104" alt="image" src="https://github.com/user-attachments/assets/73976ebf-7429-4020-a771-760c80488f48" />
 On program run, the screen above displays and we are given 3 options. Create User, Login, and Exit.
 
