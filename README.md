@@ -1,6 +1,12 @@
 # CS 166 Auction Database Project
 Joshua Mena and Colin Pham
 
+## Introduction
+We are building an online bidding marketplace. The platform supports real-time auction and bid updates for buyers, sellers, and administrators, with a PostgreSQL backend for efficient data management. Sellers can list items, buyers can place bids and monitor auctions, and administrators can manage users, items, payments, and shipments. 
++ We are basing our project off of this ER Diagram:
+<img width="629" height="342" alt="image" src="https://github.com/user-attachments/assets/aeb8547b-9a5d-408c-94fd-3a74e4f47a03" />
+
+
 ## Languages Used:
 + PostgreSQL 
 + Python
