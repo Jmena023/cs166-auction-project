@@ -60,13 +60,14 @@ Menu
 <br>
 On program run, the screen above displays and we are given 3 options. Create User, Login, and Exit.
 <br>
-
+<br>
 
 Create User
 <br>
 <img width="274" height="154" alt="image" src="https://github.com/user-attachments/assets/248ee195-56d2-4cea-9ef1-8bb5e6e7af21" />
 <br>
 Upon selecting "1", Create user we are prompted to enter account details for account creation. 
+<br>
 <br>
 
 Logging In
@@ -75,8 +76,14 @@ Logging In
 <br>
 When choosing to log in, the system will prompt you to enter your username and password. If successful, it will verify and display your username and role. 
 <br>
+<br>
 
-
-
+Buyer, Seller and Admin Menu
+<br>
+<img width="206" height="209" alt="image" src="https://github.com/user-attachments/assets/501d3a81-ff80-4011-babe-9ffbfb521283" />
+<br>
+Once you log in you are face a new menu, specific to your role. The image above shows the Buyer menu.
+<br>
+<br>
 
 ## Performance Testing
