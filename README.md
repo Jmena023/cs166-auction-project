@@ -8,7 +8,7 @@ git clone (link)
 scp -r "(file path)" <netid>@cs166.cs.ucr.edu:~/
 
 ### Connect to CS166 server
-ssh <netid>@cs166.cs.ucr.edu
+ssh (netid)@cs166.cs.ucr.edu
 
 ### Start Postgre Server
 source startPostgreSQL.sh
