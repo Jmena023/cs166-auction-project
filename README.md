@@ -55,18 +55,27 @@ source stopPostgreDB.sh
 
 ## Usage + Example Output:
 Menu
-(<br>)
+<br>
 <img width="377" height="104" alt="image" src="https://github.com/user-attachments/assets/73976ebf-7429-4020-a771-760c80488f48" />
+<br>
 On program run, the screen above displays and we are given 3 options. Create User, Login, and Exit.
+<br>
 
 
 Create User
+<br>
 <img width="274" height="154" alt="image" src="https://github.com/user-attachments/assets/248ee195-56d2-4cea-9ef1-8bb5e6e7af21" />
+<br>
 Upon selecting "1", Create user we are prompted to enter account details for account creation. 
+<br>
 
 Logging In
+<br>
 <img width="174" height="144" alt="image" src="https://github.com/user-attachments/assets/7e7f99f0-8cdf-4771-9b1a-ebe250cbdbfe" />
+<br>
 When choosing to log in, the system will prompt you to enter your username and password. If successful, it will verify and display your username and role. 
+<br>
+
 
 
 
