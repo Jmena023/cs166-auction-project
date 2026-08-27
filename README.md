@@ -1,8 +1,11 @@
-# cs166-auction-project
-CS 166 Auction Database Project - Phase 3
+# CS 166 Auction Database Project
+Joshua Mena and Colin Pham
 
+## Languages Used:
+PostgreSQL 
+Python
 
-
+## Installation Guide:
 ### Clone the repo
 git clone (link)
 
