@@ -54,7 +54,7 @@ source stopPostgreDB.sh
 + Shipments can be completed by the Seller once the Payment is complete.
 
 ## Usage + Example Output:
-Menu
+### Menu
 <br>
 <img width="377" height="104" alt="image" src="https://github.com/user-attachments/assets/73976ebf-7429-4020-a771-760c80488f48" />
 <br>
