@@ -111,4 +111,7 @@ Logging out returns you back to the main menu. From there, you can either choose
 <br>
 
 ## Performance Testing
+<br>
+Query Performance before and after indexing:
+<br>
 <img width="613" height="455" alt="image" src="https://github.com/user-attachments/assets/b51f1e26-367f-4625-9018-3932566bc504" />
