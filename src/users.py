@@ -5,6 +5,21 @@ def create_user(connection):
     cursor = connection.cursor()
 
     login = input("Enter login: ")
+
+    cursor.execute(
+        """
+        SELECT login
+        FROM users
+        WHERE login = %s;
+        """,
+        (login,)
+    )
+
+    if cursor.fetchone():
+        print("That username is already taken. Please choose a different login.")
+        cursor.close()
+        return
+
     password = input("Enter password: ")
     phone_num = input("Enter phone number: ")
     address = input("Enter address: ")
@@ -27,6 +42,7 @@ def create_user(connection):
     )
 
     connection.commit()
+    print("Account created successfully")
     cursor.close()
 
 
